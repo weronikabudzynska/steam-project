@@ -1,0 +1,25 @@
+<body style="background-color: blue;">
+<p style="color:blueviolet;background-color:rgb(220, 20, 60);">To jest paragraf</p>
+<br>
+<h1 style="background-color: aqua;font-size:50px;">To jest nagłówek1</h1>
+<h2>To jest nagłówek2</h2>
+<ul>
+    <li>Lista1</li>
+    <li>Lista2</li>
+    <li>Lista3</li>
+    <li>Lista4</li>
+</ul>
+<ol>
+    <li>Lista1</li>
+    <li>Lista2</li>
+    <li>Lista3</li>
+    <li>Lista4</li>
+</ol>
+<a href="https://www.google.pl/">link</a>
+<img src="https://pixabay.com/pl/photos/owad-konik-polny-chrz%c4%85szcz-owad-7546974/" alt="Zdjęcie przedtawia konika polnego">
+<hr>
+<div style="background-color:black;">
+<p style="color:blue">Hello world!</p>
+
+<div><ul><li>lista</li></ul></div>
+</body>

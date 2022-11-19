@@ -1,0 +1,461 @@
+/* Główny arkusz styli naszej strony*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family: "Catamaran", sans-serif;
+    font-weight: 400;
+    background-color: antiquewhite;
+    line-height: 1.5;
+    color: rgb(46, 41, 41);
+}
+
+/* Stylowanie typografii */
+h1,
+h2,
+h3 {
+   margin: 0;
+   line-height: 1;
+}
+
+h1{
+    font-size: 120px;
+    margin-top: 150px;
+    margin-bottom: 30px;
+    font-weight: 900;
+}
+h2{
+    font-weight: 100;
+    font-size: 70px;
+}
+h3 {
+    font-weight: 100;
+    font-size: 30px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+/* Kontener */
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+
+
+/* Stylowanie Nawigacji i logo */
+/* Stylowanie logo */
+/* .logo { 
+    width: 50%;
+} */
+
+.fa-signature {
+    font-size: 65px;
+    color:rgb(184, 4, 4);
+}
+
+.hero-top{
+    display:flex;
+    justify-content: space-between;
+}
+
+.navigation-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: border 25ms;
+}
+.navigation-link:hover{
+    border-bottom: solid 3px #bf0034;
+}
+.navigation-links {
+    display: flex;
+    gap: 20px;
+}
+.mobile-menu-icon{
+    display: none;
+}
+/* Header */
+.hero {
+    padding-top: 50px;
+    background-color: rgb(179, 13, 29);
+    background-image: url("../images/pexels-uzunov-rostislav-5108764.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.hero-text{
+    font-size: 20px;
+    margin-bottom: 50px;
+}
+.hero-text-wrapper{
+    width: 50%;
+}
+.hero-button{
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: #ffffff;
+    border:solid 3px #c91b1b;
+    transition: background-color 0.5s;
+}
+.hero-button:hover{
+    background-color:#c91b1b;
+    
+}
+/* Stylowanie sekcji */
+.section-light {
+    background-color: #ffffff
+}
+.section-orange {
+    background-color:rgba(97, 32, 8, 0.783);
+}
+
+.section-uniqe {
+    background-color: rgba(23, 86, 18, 0.763);
+}
+.section{
+    padding: 100px 0;
+}
+/* Sekcja about */
+.about {
+    padding-bottom: 360px ;
+}
+.about-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-left,
+.about-right{
+    width: 48%;
+}
+.about-left{
+    position:relative;
+    z-index: 0;
+}
+.about-left img {
+    position: absolute;
+    left: 35px;
+    width: 80%;
+   
+}
+.about-left::before {
+    position: absolute;
+    top: -35px;
+    left: 0px;
+    content: "";
+    border: solid 20px #09431d;
+    background-color: transparent;
+    width: 70%;
+    height: 600px;
+    z-index: -2;
+    
+}
+
+.about-left::after {
+    position: absolute;
+    top: 30px;
+    left: 60px;
+    content: "";
+    background-color: #891232;
+    width: 80%;
+    height: 600px;
+    z-index: -1;
+}
+
+.about-right h2{
+    color: #4e9175;
+    margin-bottom: 20px;
+}
+.about-right p{
+    margin-bottom: 10px;
+}
+
+.about-text-top::first-letter{
+    color: #4e9175;
+}
+
+/* Sekcja zaintresowania */
+
+.interests{
+    color: #ffffff;
+}
+
+.interests-wrapper{
+    display: flex;
+    gap: 60px;
+    text-align: center;
+}
+.interests-wrapper li{
+    width: 25%;
+}
+.interests-wrapper i{
+    padding: 25px;
+    margin-bottom: 25px;
+    border: solid 3px #e16742;    
+    border-radius: 50%;
+}
+.interests-wrapper h3{
+    margin-bottom: 15px;
+}
+.interests-wrapper p{
+    font-size: 14px;
+}
+.fa-camera,
+.fa-book,
+.fa-music,
+.fa-pen-fancy {
+    font-size: 30px;
+}
+/* Sekcja photos */
+
+.photos{
+    text-align: center;
+}
+.photos-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 20px;
+}
+.photos-wrapper figure{
+    width: 32%;
+    min-width: 300px;
+    transition: transform 0.5s;
+}
+.photos-wrapper figure:hover{
+    transform: scale(0.9);
+}
+.photos-wrapper img{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+.photos-wrapper figcaption{
+    font-size: 14px;
+}
+.photos h2{
+    color: #4e9175;
+    margin-bottom: 20px;
+}
+.photos p {
+    padding: 0 130px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+/* sekcja quote */
+
+.qoute{
+    color: #ffffff;
+    z-index: 0;
+    position: relative;
+    overflow: hidden;
+}
+.qoute::after{
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: #09431d;
+    bottom: -150px;
+    right: -50px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.qoute::before{
+    position: absolute;
+    content: "";
+    width: 350px;
+    height: 350px;
+    background-color: #09431d;
+    top: -150px;
+    left: -50px;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.fa-quote-left{
+    color: rgba(58, 36, 3, 0.692);
+    margin-left: 100px;
+}
+.qoute-text {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    margin-left: 150px;
+}
+.qoute-author {
+    text-align: right;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+/* Sekcja kontakt */
+.contact{
+    text-align: center;
+}
+
+.contact h2{
+    margin-bottom: 50px;
+}
+.contact form{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+}
+.contact label{
+    text-align: left;
+    margin-bottom: 5px;
+}
+.contact input,
+.contact textarea {
+    margin-bottom: 20px;
+    padding: 8px 15px;
+    border: solid 2px #891232;
+    border-radius: 8px;
+}
+.contact textarea{
+    resize: none;
+}
+.contact button {
+    background-color: #920909c1;
+    color: #ffffff;
+    width: 150px;
+    margin: 0 auto;
+    padding: 8px 16px;
+    border: solid 2px #920909c1;
+    border-radius: 8px;
+    transition: all 0.5s ;
+    cursor:pointer;
+}
+.contact button:hover{
+    background-color:#ffffff;
+    color:#920909c1
+}
+footer{
+    color: #ffffff;
+    padding: 80px 0;
+}
+
+.footer-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.footer-wrapper p:nth-child(-n + 2){
+    margin-bottom: 8px;
+}
+.footer-wrapper p{
+    font-size: 14px;
+}
+.footer-social-links{
+    display: flex;
+    gap: 15px;
+}
+.footer-social-links a{
+    color: #ffffff;
+    transition: color 0.5s
+}
+.footer-social-links a:hover{
+    color: #000506;
+}
+
+/* pseudoklasy i pseudoelementy */
+/* najpoplarniejsza pseudoklasa :hover */
+
+/* Reguła CSS @media-screen pozwala dostosować stronę 
+na różne ekrany and(max-width: ) - oznacza granicę*/
+
+@media screen and (max-width: 1200px) {
+    .container{
+        width: 100%;
+        padding: 0 40px;
+    }
+    .photos-wrapper figure{
+        width: 48%;
+}
+}
+@media screen and (max-width: 768px) {
+    .mobile-menu-icon{
+        display: block;
+        text-align: right;
+    }
+    .navigation-links{
+        display: none;
+    }
+    .opened{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .h1{
+        font-size: 80px;
+        margin-top: 100px;
+    }
+    
+    .photos-wrapper figure{
+        width: 90%;
+}
+    .photos-wrapper {
+        justify-content: center;
+}
+    .photos p {
+        padding: 0;
+    }
+    .contact form{
+        width: 90%;
+    }
+    .interests-wrapper{
+        display: block;
+        
+    }
+    .interests-wrapper li{
+        width: 100%;
+        margin-bottom: 35px;
+    }
+    
+    .footer-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: start;
+    }
+    .about-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about-left,
+    .about-right{
+        width: 100%;
+    }
+    .about-right{
+        margin-top: 800px;
+    }
+}
+@media screen and (max-width: 480px) {
+    h1{
+        font-size: 50px;
+    }
+    .hero-text{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-text-wrapper{
+        width: 100%;
+    }
+    .hero-button{
+        font-size: 18px;
+    }
+}
